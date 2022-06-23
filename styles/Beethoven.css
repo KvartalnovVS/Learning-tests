@@ -75,22 +75,14 @@ html {
     text-decoration: none;
   }
 
-  aside li, a:hover {
+  aside li, aside a:hover, aside a:visited, aside a:active {
     color: rgb(255, 255, 255);
-  }
-
-  aside li, a:visited {
-    color: #ffffff;
-  }
-
-  aside li, a:active {
-    color: white;
   }
 
   footer {
     margin-top: 10px;
     background-color: black;
     border: 2px solid #B71E00;
-    color: white;
+    color: rgb(185, 185, 185);
     text-align: center;
   }
