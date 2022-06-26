@@ -1,2 +1,0 @@
-# Learning-tests
-For study
