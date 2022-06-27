@@ -75,8 +75,12 @@ html {
     text-decoration: none;
   }
 
-  aside li, aside a:hover, aside a:visited, aside a:active {
-    color: rgb(255, 255, 255);
+  aside li, aside a, aside a:visited {
+    color: rgb(210, 210, 210);
+  }
+
+  aside a:active, aside a:hover {
+    color: rgb(240, 240, 240);
   }
 
   footer {
