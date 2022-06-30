@@ -1,3 +1,4 @@
+/* Основные элементы */
 html {
     font-size: 10px;
     font-family: "Joan", serif;
@@ -31,22 +32,47 @@ html {
     margin: 0 auto;
   }
 
+  /* Навигационная панель*/
   .nav {
     background-color: black;
     border: 2px solid #B71E00;
     margin: 10px;
   }
 
-  .ul li {
+  .inline li {
     display: inline;
     margin-right: 10px;
     color: white;
   }
 
-  .aNav {
-    color: white;
+  nav img {
+    width: 36px;
+    height: 28px;
+    transform: translate(-150%, -130%);
+    left: 52%;
+    position: absolute;
+    border: 2px solid #B71E00;
+    border-radius: 10px;
+    background-blend-mode: multiply;
   }
 
+  #search {
+    border: 2px solid #B71E00;
+    border-radius: 10px;
+    position: absolute;
+    right: 1%;
+    transform: translate(-70%, -170%);
+  }
+
+  #submit {
+    border: 2px solid #B71E00;
+    border-radius: 10px;
+    position: absolute;
+    right: 2%;
+    transform: translate(-100%, -170%);
+  }
+
+  /* Содержимое*/
   blockquote {
     font-size: large;
   }
@@ -59,6 +85,7 @@ html {
     flex: 4;
   }
 
+  /* Боковая панель*/
   aside {
     flex: 1;
     margin-left: 10px;
@@ -75,12 +102,21 @@ html {
     text-decoration: none;
   }
 
-  aside li, aside a, aside a:visited {
+  aside li, aside a, aside a:visited, aside a:link, nav li, nav a, nav a:visited, nav a:link {
     color: rgb(210, 210, 210);
+    text-decoration: none;
   }
 
-  aside a:active, aside a:hover {
+  aside a:active, aside a:hover, nav a:active, nav a:hover {
     color: rgb(240, 240, 240);
+  }
+
+  article a:link, article a:visited {
+    color: black;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 
   footer {
