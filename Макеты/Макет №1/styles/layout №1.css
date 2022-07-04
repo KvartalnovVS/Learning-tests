@@ -201,3 +201,68 @@ body {
     height: 26px;
     background-repeat: no-repeat;
 }
+/*---------------*/
+/*Раздел Portfolio*/
+.portfolio {}
+
+.portfolio__body {
+    display: block;
+    background-color: #F6F6F6;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    position: absolute;
+    margin: 110px auto 114px auto;
+}
+.portfolio__title {
+    margin: 113px auto 47px auto;
+}
+
+.portfolio__block {
+    width: 936px;
+    height: 544px;
+    display: block;
+    position: relative;
+    margin: 99px auto;
+}
+
+.img-portfolio {}
+.portfolio__image1 {
+    width: 936px;
+    height: 510px;
+    display: block;
+    position: relative;
+    margin-bottom: 45px;
+}
+.portfolio__image2 {
+    width: 936px;
+    height: 522px;
+    display: block;
+    position: relative;
+    margin-bottom: 45px;
+}
+.portfolio__image3 {
+    width: 936px;
+    height: 522px;
+    display: block;
+    position: relative;
+    margin-bottom: 45px;
+}
+
+.portfolio a:visited {
+    color: #070707;
+}
+
+.link-portfolio {
+    font-family: 'Gilroy-Medium';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    text-decoration-line: underline;  
+    color: #070707;
+    margin-bottom: 99px;
+}
+
+.portfolio__link1 {}
+.portfolio__link2 {}
+.portfolio__link3 {}
