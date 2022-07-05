@@ -20,8 +20,8 @@
 /*----------*/
 
 body {
-    max-height: 4759px;
-    max-width: 1445px;
+    height: auto;
+    width: 100%;
 }
 
 /*Раздел Home*/
@@ -38,7 +38,7 @@ body {
     text-align: center;
     position: relative;
     width: 943px;
-    letter-spacing: 153px;
+    letter-spacing: 152px;
     border-bottom: 1px solid gray;
     padding-bottom: 32px;
 }
@@ -77,13 +77,11 @@ body {
     left: 78px
 }
 .home__lang {
-    /*text-align: right;*/
     writing-mode:vertical-rl;
     transform: rotate(180deg);
     margin: 70px 0px 54px 0px;
     left: 300px;
     position: relative;
-    /*flex: 0 0 33.333%;*/
     font-family: 'Gilroy-Bold';
     font-size: 16px;
     line-height: 20px;
@@ -107,6 +105,7 @@ body {
     width: 100%;
     height: 506px;
     left: 0px;
+    right: 0px;
     display: block;
     position: relative;
     margin: 104px 0px 91px 0px;
@@ -211,42 +210,39 @@ body {
     width: 100%;
     height: auto;
     left: 0px;
-    position: absolute;
+    position: relative;
     margin: 110px auto 114px auto;
 }
 .portfolio__title {
     margin: 113px auto 47px auto;
+    position: relative;
+    padding-top: 113px;
 }
 
 .portfolio__block {
     width: 936px;
-    height: 544px;
+    height: auto;
     display: block;
     position: relative;
     margin: 99px auto;
 }
 
-.img-portfolio {}
-.portfolio__image1 {
-    width: 936px;
-    height: 510px;
+.img-portfolio {
     display: block;
     position: relative;
     margin-bottom: 45px;
+}
+.portfolio__image1 {
+    width: 936px;
+    height: 510px;
 }
 .portfolio__image2 {
     width: 936px;
     height: 522px;
-    display: block;
-    position: relative;
-    margin-bottom: 45px;
 }
 .portfolio__image3 {
     width: 936px;
     height: 522px;
-    display: block;
-    position: relative;
-    margin-bottom: 45px;
 }
 
 .portfolio a:visited {
@@ -265,4 +261,53 @@ body {
 
 .portfolio__link1 {}
 .portfolio__link2 {}
-.portfolio__link3 {}
+.portfolio__link3 {
+    padding-bottom: 96px;
+}
+/*-----------------*/
+/*Раздел Contacts*/
+.contacts {
+    display: block;
+    position: relative;
+}
+
+.contacts__body {
+    display: block;
+    position: relative;
+    width: 343px;
+    height: 385px;
+    margin: 114px auto 123px auto;
+}
+.contacts__header {
+    display: block;
+    position: relative;
+}
+.contacts__title {
+    margin: 114px auto 20px auto;
+}
+.contacts__text {
+    margin: 20px auto 30px auto;
+}
+.contacts__button {
+    text-align: center;
+}
+.contacts__button-send {
+    margin: 40px auto 92px auto;
+    position: relative;
+    background-color: black;
+    color: white;
+    width: 166px;
+    height: 38px;
+    border-radius: 50px;
+}
+.contacts__row {}
+.contacts__icons-block {}
+.contacts__icons {}
+.contacts__icons-caption {
+    margin: 45px auto 123px auto;
+    font-family: 'Gilroy-Medium';
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #828282;
+}
