@@ -132,7 +132,6 @@ body {
     height: 471px;
     display: inline-block;
     margin-top: 65px;
-    border: 1px solid black;
 }
 .skills__text {
     line-height: 51px;
@@ -150,8 +149,8 @@ body {
 }
 .skills__image {
     display: inline-block;
-    margin-top: 30px;
-    border: 1px solid black;
+    position: absolute;
+    margin-top: 35px;
 }
 
 .title {
@@ -162,4 +161,70 @@ body {
     font-size: 40px;
     line-height: 58px;
     color: #F37A7A;
+}
+/*---------------*/
+
+/*Projects*/
+
+.projects {}
+
+.projects__body {
+    width: 1260px;
+    height: 706px;
+    margin: 69px auto;
+}
+.projects__header {}
+.projects__title {}
+.projects__text {
+    margin: 43px auto;
+    text-align: center;
+}
+.projects__block {
+    width: 1260px;
+    margin: 53px auto;
+    display: flex;
+}
+.item-projects {}
+.item-projects__body {
+    flex: 0 0 33.333%;
+    /*width: 392px;
+    height: 501px;*/
+    /*background: linear-gradient(302.35deg, #0D54BE 4.37%, #20ECD3 95.31%);*/
+    /*padding: 4px;*/
+    margin-right: 42px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(302.35deg, #0D54BE 4.37%, #20ECD3 95.31%);
+    border-image-slice: 1;
+}
+.item-projects__image {}
+.item-projects__info {
+    width: 380px;
+    height: 223px;
+}
+.item-projects__text {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    text-align: center;
+    color: #818080;
+    margin-top: 25px;
+    width: 369px;
+    height: 150px;
+}
+.item-projects__link {
+    text-align: center;
+    position: relative;
+}
+.projects-link__ico {
+    padding: 10px;
+    position: relative;
+    top: 15px;
+}
+
+.projects a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: #0571AD;
 }
