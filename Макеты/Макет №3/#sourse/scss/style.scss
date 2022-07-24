@@ -137,6 +137,12 @@ body {
             display: block;
             text-align: center;
         }
+        /*&_active {
+            color: #ff6464;
+        }*/
+        &._active {
+            color: #ff6464;
+        }
     }
 }
 
@@ -432,6 +438,18 @@ body {
 //--------------
 
 .works {
+    &__items {
+        padding-bottom: 60px;
+        @media (max-width: $md3+px) {
+            padding-bottom: 30px;
+        }
+    }
+    &__main-title {
+        padding-bottom: 40px;
+        @media (max-width: $md3+px) {
+            padding-bottom: 20px;
+        }
+    }
     &__item {
         padding-bottom: 50px;
         border-bottom: 1px solid #e0e0e0;
@@ -468,13 +486,20 @@ body {
 
     &__title {
         color: #21243d;
+        text-decoration: none;
         display: inline-block;
         font-size: 30px;
         font-weight: 700;
         line-height: 44 / 30 * 100%;
         margin-bottom: 17px;
+        transition: color 0.3s ease 0s;
         @media (max-width: $md3+px) {
             font-size: 24px;
+        }
+        @media (min-width: $md2+px) {
+            &:hover {
+                color: #ff6464;
+            }
         }
     }
 
@@ -488,7 +513,7 @@ body {
         background: #142850;
         border-radius: 16px;
         height: 25px;
-        padding: 0px 10px;
+        padding: 2px 10px 0px 10px;
         display: inline-flex;
         justify-content: center;
         align-items: center;
@@ -513,6 +538,9 @@ body {
         width: 100%;
         text-align: center;
         padding: 50px 0;
+        @media (max-width: $md3+px) {
+            padding: 30px 0;
+        }
     }
 
     &__social {
@@ -522,6 +550,7 @@ body {
     &__copy {
     }
 }
+//===============================
 
 .social {
     display: flex;
@@ -537,6 +566,131 @@ body {
             &:hover {
                 color: #ff6464;
             }
+        }
+    }
+}
+//===============================
+
+.blog {
+    padding-bottom: 50px;
+    @media (max-width: $md3+px) {
+        padding-bottom: 30px;
+    }
+    &__title {
+        margin-bottom: 50px;
+        @media (max-width: $md3+px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__items {
+    }
+
+    &__item {
+        border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        @media (max-width: $md3+px) {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__item-title {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 44 / 30 * 100%;
+        display: inline-block;
+        margin-bottom: 12px;
+        color: #21243d;
+        text-decoration: none;
+        transition: color 0.3s ease 0s;
+        @media (min-width: $md2+px) {
+            &:hover {
+                color: #ff6464;
+            }
+        }
+        @media (max-width: $md3+px) {
+            font-size: 26px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        font-size: 20px;
+        margin-bottom: 15px;
+        @media (max-width: $md3+px) {
+            font-size: 16px;
+        }
+    }
+
+    &__date {
+    }
+
+    &__separator {
+        margin: 0px 15px;
+    }
+
+    &__category {
+        color: #8695a4;
+    }
+
+    &__text {
+    }
+}
+//===============================
+
+.article {
+    max-width: 700px;
+    padding: 0 10px 30px 10px;
+    margin: 0 auto;
+
+    &__title {
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 50 / 34 * 100%;
+        margin-bottom: 30px;
+        @media (max-width: $md3+px) {
+            font-size: 30px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        margin-bottom: 23px;
+    }
+
+    &__year {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #ff7c7c;
+        border-radius: 16px;
+        height: 25px;
+        padding: 2px 10px 0px 10px;
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    &__category {
+        align-self: center;
+        font-size: 20px;
+        line-height: 25 / 20 * 100%;
+        margin-left: 25px;
+        @media (max-width: $md3+px) {
+            font-size: 18px;
+        }
+    }
+
+    &__text {
+        p {
+            @extend .text;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            margin-bottom: 20px;
         }
     }
 }
