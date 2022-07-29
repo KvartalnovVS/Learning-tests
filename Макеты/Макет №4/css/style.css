@@ -41,6 +41,7 @@ body {
   font-weight: 500;
   color: #252b42;
   font-family: "Montserrat";
+  background-color: #fafafa;
 }
 
 .wrapper {
@@ -163,6 +164,36 @@ body {
   z-index: 2;
   margin-top: -111px;
 }
+.header-block {
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+@media (max-width: 992px) {
+  .header-block {
+    text-align: center;
+  }
+}
+.header-block__title {
+  font-size: 40px;
+  line-height: 142.5%;
+  font-weight: 700;
+}
+.header-block__title:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (max-width: 992px) {
+  .header-block__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 142.5%;
+    letter-spacing: 0.2px;
+  }
+}
+.header-block__sub-title {
+  color: #737373;
+  font-size: 14px;
+  line-height: 142.8571428571%;
+}
 
 .main-block {
   position: relative;
@@ -179,6 +210,11 @@ body {
 @media (max-width: 992px) {
   .main-block__body {
     padding: 120px 0 191px 0;
+  }
+}
+@media (max-width: 479px) {
+  .main-block__body {
+    padding: 115px 0 160px 0;
   }
 }
 .main-block__title {
@@ -344,4 +380,79 @@ body {
 .item-service__text {
   color: #737373;
   line-height: 142.8571428571%;
+}
+
+.advantages {
+  padding: 80px 0;
+}
+@media (max-width: 992px) {
+  .advantages {
+    padding: 90px 0;
+  }
+}
+.advantages__header {
+  margin-bottom: 50px;
+}
+.advantages__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px -30px;
+}
+.advantages__column {
+  padding: 0 15px;
+  margin-bottom: 30px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+@media (max-width: 992px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+}
+@media (max-width: 479px) {
+  .advantages__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+.advantages__item {
+  height: 100%;
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+.advantages__item > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+.advantages__icon {
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.advantages__value {
+  font-size: 40px;
+  line-height: 142.5%;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+.advantages__text {
+  color: #737373;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
 }
