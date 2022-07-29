@@ -140,6 +140,8 @@ body {
     }
     &__advantages {
     }
+    &__practice {
+    }
 }
 //------HEADER-BLOCK------------------
 .header-block {
@@ -339,9 +341,9 @@ body {
 
 //--------ADVANTAGES-------------------------
 .advantages {
-    padding: 80px 0;
+    padding-top: 80px;
     @media (max-width: 992px) {
-        padding: 90px 0;
+        padding-top: 70px;
     }
     &__container {
     }
@@ -398,6 +400,81 @@ body {
         font-size: 16px;
         line-height: 24 / 16 * 100%;
         letter-spacing: 0.1px;
+    }
+}
+
+//--------PRACTICE---------------------------
+.practice {
+    padding: 125px 0 80px 0;
+    @media (max-width: 993px) {
+        padding-top: 80px;
+    }
+    &__container {
+    }
+
+    &__header {
+        margin-bottom: 45px;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px -30px;
+    }
+
+    &__column {
+        padding: 0 20px 30px;
+        flex: 0 1 25%;
+        @media (max-width: 1040px) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: 630px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__item {
+    }
+}
+
+.item-practice {
+    background-color: #fff;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    &__content {
+        padding: 30px;
+        flex: 1 1 auto;
+    }
+
+    &__link {
+        color: inherit;
+        display: inline-block;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:not(:last-child) {
+            padding-bottom: 15px;
+        }
+    }
+
+    &__title {
+        letter-spacing: 0.1px;
+        font-size: 16px;
+        line-height: 24 / 16 * 100%;
+        font-weight: 700;
+    }
+
+    &__text {
+        color: #737373;
+        font-size: 14px;
+        line-height: 20 / 14 * 100%;
+        letter-spacing: 0.2px;
+    }
+
+    &__image {
+        display: block;
+        padding-bottom: 60%;
     }
 }
 
