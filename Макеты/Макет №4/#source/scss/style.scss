@@ -37,6 +37,7 @@ body {
     font-weight: 500;
     color: #252b42;
     font-family: "Montserrat";
+    background-color: #fafafa;
 }
 //-------------------------------------------------
 .wrapper {
@@ -126,7 +127,8 @@ body {
     }
 }
 
-//--------MAIN-------------------------------
+//=====================================================
+//-----PAGE------------------
 .page {
     flex: 1 1 auto;
     &__main-block {
@@ -136,7 +138,39 @@ body {
         z-index: 2;
         margin-top: -111px;
     }
+    &__advantages {
+    }
 }
+//------HEADER-BLOCK------------------
+.header-block {
+    text-align: center;
+    letter-spacing: 0.2px;
+    @media (max-width: 992px) {
+        text-align: center;
+    }
+    &__title {
+        font-size: 40px;
+        line-height: 57 / 40 * 100%;
+        font-weight: 700;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 992px) {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 57 / 40 * 100%;
+            letter-spacing: 0.2px;
+        }
+    }
+
+    &__sub-title {
+        color: #737373;
+        font-size: 14px;
+        line-height: 20 / 14 * 100%;
+    }
+}
+//=====================================================
+//------MAIN-------------------------------
 .main-block {
     position: relative;
     &__container {
@@ -152,6 +186,9 @@ body {
         }
         @media (max-width: 992px) {
             padding: 120px 0 191px 0;
+        }
+        @media (max-width: 479px) {
+            padding: 115px 0 160px 0;
         }
     }
 
@@ -297,6 +334,70 @@ body {
     &__text {
         color: #737373;
         line-height: 20 / 14 * 100%;
+    }
+}
+
+//--------ADVANTAGES-------------------------
+.advantages {
+    padding: 80px 0;
+    @media (max-width: 992px) {
+        padding: 90px 0;
+    }
+    &__container {
+    }
+
+    &__header {
+        margin-bottom: 50px;
+    }
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -15px -30px;
+    }
+
+    &__column {
+        padding: 0 15px;
+        margin-bottom: 30px;
+        flex: 0 1 25%;
+        @media (max-width: 992px) {
+            flex: 0 1 50%;
+        }
+        @media (max-width: 479px) {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__item {
+        height: 100%;
+        background-color: #fff;
+        padding: 30px;
+        text-align: center;
+        & > *:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__icon {
+        height: 48px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    &__value {
+        font-size: 40px;
+        line-height: 57 / 40 * 100%;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+    }
+
+    &__text {
+        color: #737373;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24 / 16 * 100%;
+        letter-spacing: 0.1px;
     }
 }
 
