@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.car {
+}
+.car__body {
+}
+.car__title {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.car__change {
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    display: block;
+}
+.car__brand-select {
+}
+.brand-select-label {
+}
+.brand-select {
+}
+.car__model-select {
+}
+.model-select-label {
+}
+.model-select {
+}
+.car__price {
+}
+.price-label {
+}
+.price-select {
+}
+
+.result {
+    text-align: center;
+    margin: 15px;
+}
+.btn-result {
+}
+
+.para-result {
+}
+
+.hidden {
+    display: none;
+}
+.model-option {
+}
