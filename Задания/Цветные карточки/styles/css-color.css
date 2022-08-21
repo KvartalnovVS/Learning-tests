@@ -1,0 +1,83 @@
+html {
+    background-color: darkgoldenrod;
+}
+
+.color {
+    font-family: 'Courier New', Courier, monospace;
+}
+.color__header {
+    margin: 20px;
+}
+.color__title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+}
+.switch {
+    text-align: center;
+}
+.switch__button {
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.switch__button:hover {
+    background-color: rgb(31, 31, 31);
+}
+.switch__info {
+    background-color: red;
+    transition: all 0.3s ease 0s;
+    padding: 3px;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.switch__text {
+    color: white;
+}
+.on-info {
+    background-color: green;
+}
+.on-button {
+    background-color: white;
+    color: black;
+}
+.on-button:hover {
+    background-color: rgb(192, 192, 192);
+}
+.color__body {
+}
+.color__row1 {
+    display: flex;
+    justify-content: space-between;
+}
+.color__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 90px;
+    width: 160px;
+    margin: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+.color__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: darkkhaki;
+    cursor: pointer;
+}
