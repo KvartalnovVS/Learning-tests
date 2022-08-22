@@ -1,12 +1,12 @@
 //! Список моделей и их характеристики
-let superb = new Model('Superb', 4500000, ['white', 'black', 'cherry'], 280);
-let octavia = new Model('Octavia', 1800000, ['white', 'black', 'gray'], 150);
-let yeti = new Model('Yeti', 3500000, ['white', 'black', 'brown'], 150);
-let rapid = new Model('Rapid', 2500000, ['white', 'black', 'red'], 200);
+let superb = new Model('Skoda', 'Superb', 4500000, ['white', 'black', 'cherry'], 280);
+let octavia = new Model('Skoda', 'Octavia', 1800000, ['white', 'black', 'gray'], 150);
+let yeti = new Model('Skoda', 'Yeti', 3500000, ['white', 'black', 'brown'], 150);
+let rapid = new Model('Skoda', 'Rapid', 2500000, ['white', 'black', 'red'], 200);
 
-let tuareg = new Model('Tuareg', 4000000, ['white', 'black', 'green'], 260);
-let polo = new Model('Polo', 1200000, ['white', 'black', 'silver'], 160);
-let tiguan = new Model('Tiguan', 3000000, ['white', 'black', 'yellow'], 220);
+let tuareg = new Model('Volkswagen', 'Tuareg', 4000000, ['white', 'black', 'green'], 260);
+let polo = new Model('Volkswagen', 'Polo', 1200000, ['white', 'black', 'silver'], 160);
+let tiguan = new Model('Volkswagen', 'Tiguan', 3000000, ['white', 'black', 'yellow'], 220);
 
 let allModels = [superb, octavia, yeti, rapid, tuareg, polo, tiguan];
 let skodaModels = [superb, octavia, yeti, rapid];
@@ -21,6 +21,10 @@ let cars = [carSkoda, carVolkswagen];
 let carBrandList = document.getElementById('brand-select');
 let carModelList = document.getElementById('model-select');
 let carPriceList = document.getElementById('price-select');
+
+let btnResult = document.querySelector('.btn-result');
+let paraResult = document.querySelector('.para-result');
+let paraResultInfo = document.querySelector('.para-result-info');
 
 //! Конструктор брэнда машины и модельного ряда
 function Car(brand, models) {
@@ -52,7 +56,8 @@ function priceList() {
 priceList();
 
 //! Конструктор каждой модели в частности
-function Model(name, price, color, maxSpeed) {
+function Model(brand, name, price, color, maxSpeed) {
+    this.brand = brand;
     this.name = name;
     this.price = price;
     this.color = color;
@@ -64,11 +69,9 @@ Car.prototype.modelsList = function startModelsList() {
         carModelList.removeChild(carModelList.firstChild);
     }
     for (let i = 0; i < this.carModels.length; i++) {
-        //let model = this.carModels[i].name;
         let newModelOption = document.createElement('option');
         let modelPrice = this.carModels[i].price;
         newModelOption.setAttribute('value', this.carModels[i].name);
-        newModelOption.setAttribute('id', 'model-option');
         newModelOption.textContent = this.carModels[i].name;
         carModelList.appendChild(newModelOption);
         if (carPriceList.value === 'до 2.000.000 руб' && modelPrice > 2000000) {
@@ -78,19 +81,9 @@ Car.prototype.modelsList = function startModelsList() {
             carModelList.removeChild(newModelOption);
         }
     }
-    /*carPriceList.onchange = function () {
-        let modelOption = document.getElementById('option');
-        if (carPriceList.value = 'до 2.000.000 руб' && Model.price > 2000000) {
-            modelOption.style.display = 'none';
-        } else if (carPriceList.value = 'до 3.500.000 руб' && Model.price > 3500000) {
-            modelOption.style.display = 'none';
-        } else if (carPriceList.value = 'до 5.000.000 руб' && Model.price > 5000000) {
-            newModelOption.style.display = 'none';
-        }
-    }*/
 }
 
-
+//! При выборе марки запускается функция создающая список моделей
 function brandChange() {
     for (let i = 0; i < cars.length; i++) {
         if (carBrandList.value === cars[i].carBrand) {
@@ -98,7 +91,24 @@ function brandChange() {
         }
     }
 }
-
+carBrandList.onchange = function () {
+    brandChange();
+}
+//! Перезапуск списка моделей для обновления с учётом цены
 carPriceList.onchange = function restart() {
     brandChange();
+}
+
+btnResult.onclick = function resultFunc() {
+    let changedModel = carModelList.value;
+    let br = document.createElement('br');
+    for (let i = 0; i < allModels.length; i++) {
+        let resultModel = allModels[i];
+        if (resultModel.name === changedModel) {
+            paraResult.textContent = 'Выбранный автомобиль: ' + resultModel.brand + ' ' + resultModel.name + '.';
+            paraResultInfo.textContent = 'Характеристики: '
+                + 'Цена: ' + resultModel.price + 'Цвета: ' + resultModel.color
+                + 'Максимальная скорость: ' + resultModel.maxSpeed;
+        }
+    }
 }
