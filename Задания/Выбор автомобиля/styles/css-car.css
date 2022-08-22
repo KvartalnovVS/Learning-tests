@@ -32,6 +32,8 @@ select {
 }
 .model-select {
 }
+.model-option {
+}
 .car__price {
 }
 .price-label {
@@ -39,15 +41,18 @@ select {
 .price-select {
 }
 
-.result {
+.btn-div {
     text-align: center;
-    margin: 15px;
 }
 .btn-result {
 }
 
-.para-result {
+.result {
+    text-align: center;
+    margin: 15px;
 }
 
-.model-option {
+.para-result {
+}
+.para-result-info {
 }
