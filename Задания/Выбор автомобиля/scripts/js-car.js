@@ -23,8 +23,6 @@ let carModelList = document.getElementById('model-select');
 let carPriceList = document.getElementById('price-select');
 
 let btnResult = document.querySelector('.btn-result');
-let paraResult = document.querySelector('.para-result');
-let paraResultInfo = document.querySelector('.para-result-info');
 
 //! Конструктор брэнда машины и модельного ряда
 function Car(brand, models) {
@@ -100,15 +98,22 @@ carPriceList.onchange = function restart() {
 }
 
 btnResult.onclick = function resultFunc() {
+    let paraResult = document.querySelector('.para-result');
+    let paraResultInfo = document.querySelector('.para-result-info');
+    let paraPrice = document.querySelector('.para-price');
+    let paraColor = document.querySelector('.para-color');
+    let paraMaxSpeed = document.querySelector('.para-maxSpeed');
+
     let changedModel = carModelList.value;
     let br = document.createElement('br');
     for (let i = 0; i < allModels.length; i++) {
         let resultModel = allModels[i];
         if (resultModel.name === changedModel) {
             paraResult.textContent = 'Выбранный автомобиль: ' + resultModel.brand + ' ' + resultModel.name + '.';
-            paraResultInfo.textContent = 'Характеристики: '
-                + 'Цена: ' + resultModel.price + 'Цвета: ' + resultModel.color
-                + 'Максимальная скорость: ' + resultModel.maxSpeed;
+            paraResultInfo.textContent = 'Характеристики:';
+            paraPrice.textContent = 'Цена: ' + resultModel.price + ' руб.';
+            paraColor.textContent = 'Цвета: ' + resultModel.color;
+            paraMaxSpeed.textContent = 'Максимальная скорость: ' + resultModel.maxSpeed + ' км/ч';
         }
     }
 }
