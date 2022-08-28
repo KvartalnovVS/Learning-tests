@@ -30,4 +30,42 @@ p {
   top: 35px;
   right: 5px;
   color: #aaa;
+  display: none;
+}
+
+.btn {
+  position: relative;
+  top: 20px;
+  display: block;
+  margin: 0 auto;
+  height: 80px;
+  width: 160px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+/*.speed {
+  position: absolute;
+  display: none;
+  height: 40px;
+  width: 80;
+  top: 20px;
+}*/
+.restartBtn {
+  position: absolute;
+  display: none;
+  height: 40px;
+  width: 80;
+  top: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease 0s;
+}
+.restartBtn:hover {
+  background-color: black;
+  color: white;
 }
