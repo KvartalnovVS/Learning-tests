@@ -17,7 +17,6 @@ html {
     height: 250px;
     width: 250px;
     margin: 0 auto;
-    /*background-color: rgb(0, 217, 255);*/
     background: rgb(34,193,195);
     background: linear-gradient(129deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
 }
@@ -27,13 +26,12 @@ html {
     height: 105px;
     border-top-left-radius: 200px;
     border-top-right-radius: 200px;
-    /*background-color: rgb(117, 49, 0);*/
     background: rgb(131,58,180);
     background: linear-gradient(149deg, rgba(131,58,180,1) 0%, rgba(0,9,130,1) 0%, rgba(81,198,255,1) 100%);
 }
 .stopwatch__time {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
     color: white;
     font-size: 25px;
 }

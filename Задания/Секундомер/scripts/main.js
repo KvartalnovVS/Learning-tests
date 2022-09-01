@@ -7,9 +7,14 @@ function stopwatch() {
     let hr = 0;
     let min = 0;
     let sec = 0;
+    let mil = 0;
 
     function displayTime() {
-        sec++;
+        mil++;
+        if (mil > 99) {
+            mil = 0;
+            sec++
+        }
         if (sec > 59) {
             sec = 0;
             min++;
@@ -20,13 +25,14 @@ function stopwatch() {
         };
         time.textContent = (hr > 9 ? hr : "0" + hr)
             + " : " + (min > 9 ? min : "0" + min)
-            + " : " + (sec > 9 ? sec : "0" + sec);
+            + " : " + (sec > 9 ? sec : "0" + sec)
+            + " : " + (mil > 9 ? mil : "0" + mil);
 
         startBtn.onclick = 0;
     };
 
     function timeInterval() {
-        t = setInterval(displayTime, 1000);
+        t = setInterval(displayTime, 10);
     };
 
     startBtn.onclick = timeInterval;
@@ -38,10 +44,11 @@ function stopwatch() {
 
     resetBtn.onclick = function () {
         clearInterval(t);
-        time.textContent = "00 : 00 : 00";
+        time.textContent = "00 : 00 : 00 : 00";
         hr = 0;
         min = 0;
         sec = 0;
+        mil = 0;
         startBtn.onclick = timeInterval;
     };
 
