@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Readex+Pro:regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular);
+
+html {
+    font-family: "Inter";
+    font-weight: 400;
+}
+body {
+    width: inherit;
+}
+
+._container {
+    max-width: 1294px;
+    margin: 0 auto;
+}
+
+//!      HEADER
+.header {
+    &__body {
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+
+    &__california {
+        display: flex;
+        width: 170px;
+    }
+
+    &__c {
+    }
+
+    &__a {
+    }
+
+    &__l {
+        padding-left: 1px;
+    }
+
+    &__i {
+        padding-left: 2px;
+    }
+
+    &__f {
+        padding-left: 2px;
+    }
+
+    &__o {
+        padding-left: 1px;
+    }
+
+    &__r {
+        padding-left: 1px;
+    }
+
+    &__n {
+    }
+
+    &__i2 {
+        padding-left: 3px;
+    }
+
+    &__a2 {
+        padding-left: 1px;
+    }
+
+    &__nav {
+        display: flex;
+    }
+
+    &__buttons {
+        display: flex;
+        width: 110px;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    &__main {
+    }
+
+    &__slidebar {
+        width: 1294px;
+        height: 550px;
+        border-radius: 32px;
+        border: 2px solid black;
+    }
+}
+.nav {
+    font-size: 14px;
+    line-height: 17px;
+    &__all {
+        width: 160px;
+    }
+
+    &__solutions {
+        width: 130px;
+    }
+
+    &__about {
+        width: 90px;
+    }
+
+    &__support {
+        width: 110px;
+    }
+}
+.arrow {
+    display: none;
+}
+.buttons {
+    &__search {
+        padding: 0 15px;
+    }
+
+    &__cart {
+        padding: 0 16px;
+    }
+}
+.slidebar {
+    &__slideBlock {
+    }
+}
