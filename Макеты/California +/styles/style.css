@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Readex+Pro:regular);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular);
+html {
+  font-family: "Inter";
+  font-weight: 400;
+}
+
+body {
+  width: inherit;
+}
+
+._container {
+  max-width: 1294px;
+  margin: 0 auto;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0;
+}
+.header__california {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+}
+.header__l {
+  padding-left: 1px;
+}
+.header__i {
+  padding-left: 2px;
+}
+.header__f {
+  padding-left: 2px;
+}
+.header__o {
+  padding-left: 1px;
+}
+.header__r {
+  padding-left: 1px;
+}
+.header__i2 {
+  padding-left: 3px;
+}
+.header__a2 {
+  padding-left: 1px;
+}
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 110px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 10px;
+}
+.header__slidebar {
+  width: 1294px;
+  height: 550px;
+  border-radius: 32px;
+  border: 2px solid black;
+}
+
+.nav {
+  font-size: 14px;
+  line-height: 17px;
+}
+.nav__all {
+  width: 160px;
+}
+.nav__solutions {
+  width: 130px;
+}
+.nav__about {
+  width: 90px;
+}
+.nav__support {
+  width: 110px;
+}
+
+.arrow {
+  display: none;
+}
+
+.buttons__search {
+  padding: 0 15px;
+}
+.buttons__cart {
+  padding: 0 16px;
+}
