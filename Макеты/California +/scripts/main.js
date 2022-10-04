@@ -9,30 +9,43 @@ function navMenu() {
     let arrow3 = document.getElementById('arrow3');
     let arrow4 = document.getElementById('arrow4');
 
+    let allList = document.getElementById('allList');
+    let solutionsList = document.getElementById('solutionsList');
+    let aboutList = document.getElementById('aboutList');
+    let supportList = document.getElementById('supportList');
+
     navAll.onmouseover = function () {
         showArrow(arrow1);
+        showList(allList);
     };
     navSolutions.onmouseover = function () {
         showArrow(arrow2);
+        showList(solutionsList);
     };
     navAbout.onmouseover = function () {
         showArrow(arrow3);
+        showList(aboutList);
     };
     navSupport.onmouseover = function () {
         showArrow(arrow4);
+        showList(supportList);
     };
 
     navAll.onmouseout = function () {
         hiddenArrow(arrow1);
+        hiddenList(allList);
     };
     navSolutions.onmouseout = function () {
         hiddenArrow(arrow2);
+        hiddenList(solutionsList);
     };
     navAbout.onmouseout = function () {
         hiddenArrow(arrow3);
+        hiddenList(aboutList);
     };
     navSupport.onmouseout = function () {
         hiddenArrow(arrow4);
+        hiddenList(supportList);
     };
 
 
@@ -42,6 +55,13 @@ function navMenu() {
     }
     function hiddenArrow(arrow) {
         arrow.classList.remove('showArrow');
+    }
+
+    function showList(list) {
+        list.classList.add('showList');
+    }
+    function hiddenList(list) {
+        list.classList.remove('showList');
     }
 }
 navMenu()
