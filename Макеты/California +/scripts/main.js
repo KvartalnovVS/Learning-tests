@@ -14,6 +14,43 @@ function navMenu() {
     let aboutList = document.getElementById('aboutList');
     let supportList = document.getElementById('supportList');
 
+    function NavBtn(title, list) {
+        this.title = title;
+        this.list = list;
+    };
+
+    let allProductsObj = new NavBtn('All products', {
+        first: 'Lorem',
+        second: 'Lorem ipsum',
+        third: 'Sit amet',
+        fourth: 'Neque porro'
+    });
+    let solutionsObj = new NavBtn('Solutions', {
+        first: 'Sit amet',
+        second: 'Lorem'
+    });
+    let aboutObj = new NavBtn('About', {
+        first: 'Lorem ipsum'
+    });
+    let supportObj = new NavBtn('Support', {
+        first: 'Neque porro',
+        second: 'Sit amet',
+        third: 'Lorem'
+    });
+
+    function addListText(list, obj) {
+        for (let key in obj) {
+            let subtitle = document.createElement('p');
+            subtitle.textContent = '• ' + obj[key];
+            list.appendChild(subtitle);
+        }
+    }
+    addListText(allList, allProductsObj.list);
+    addListText(solutionsList, solutionsObj.list);
+    addListText(aboutList, aboutObj.list);
+    addListText(supportList, supportObj.list);
+
+
     navAll.onmouseover = function () {
         showArrow(arrow1);
         showList(allList);
@@ -47,7 +84,6 @@ function navMenu() {
         hiddenArrow(arrow4);
         hiddenList(supportList);
     };
-
 
 
     function showArrow(arrow) {
