@@ -68,7 +68,7 @@ body {
   margin-right: 10px;
 }
 .header__slidebar {
-  margin-top: 28px;
+  margin-top: 15px;
   width: 1294px;
   height: 550px;
   border-radius: 32px;
@@ -104,10 +104,10 @@ body {
 .nav__text {
   width: inherit;
   margin: inherit;
+  cursor: pointer;
 }
 
 .navBtn {
-  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,6 +115,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 13px;
 }
 
 .navList {
@@ -126,6 +127,16 @@ body {
   background-color: #eef7f4;
   margin-top: 30px;
   display: none;
+  padding: 2px 3px;
+}
+.navList p {
+  -webkit-box-shadow: rgb(190, 190, 190) 0px 0px 6px;
+          box-shadow: rgb(190, 190, 190) 0px 0px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navList p:hover {
+  background-color: #d3d8d6;
 }
 
 .arrow {
@@ -167,10 +178,24 @@ body {
   margin: auto 0 auto 3px;
   padding: 12px 19px 12px 16px;
 }
+.slidebar__showBlock {
+  overflow: hidden;
+}
+.slidebar__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
 .slidebar__slideBlock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 1190px;
+}
+.slidebar__block {
+  overflow: hidden;
+  position: relative;
 }
 .slidebar__rightArrow {
   margin: auto 3px auto 0;
@@ -183,7 +208,9 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: -40px auto 0 auto;
+  position: absolute;
+  left: calc(50% - 325px);
+  margin-top: -40px;
   width: 650px;
 }
 .slidebar__line {
