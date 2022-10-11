@@ -120,6 +120,7 @@ body {
 
 .navList {
   position: absolute;
+  z-index: 10;
   width: 100px;
   min-height: 40px;
   border: 2px solid black;
@@ -161,7 +162,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 15px;
+  padding: 15px 18px;
   margin: -15px 0;
   border-radius: 50%;
 }
@@ -186,6 +187,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
+  right: 2380px;
+  -webkit-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s;
 }
 .slidebar__slideBlock {
   display: -webkit-box;
@@ -224,6 +228,13 @@ body {
   height: 6px;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 3px;
+}
+
+.lineActive {
+  width: 202px;
+  height: 4px;
+  margin: -1px -4px 0 -4px;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .slideBlock__info {
