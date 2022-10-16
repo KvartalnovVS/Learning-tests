@@ -112,16 +112,43 @@ function slidebar() {
     let line2 = document.getElementById('line2');
     let line3 = document.getElementById('line3');
 
-    function slideArrows() {
+    function slide() {
         let slidePosition = 1;
         let right = 0;
         slider.style.right = `${right}px`;
+
+        let autoSlide = setInterval(() => {
+            if (!(slidePosition === 3)) {
+                slidePosition += 1;
+                right += 1190;
+                slider.style.right = `${right}px`;
+            } else {
+                slidePosition = 1;
+                right = 0;
+                slider.style.right = `${right}px`;
+                navLinesActive(line1, line2, line3);
+            }
+            if (slidePosition === 2) {
+                navLinesActive(line2, line1, line3);
+            }
+            if (slidePosition === 3) {
+                navLinesActive(line3, line1, line2);
+            }
+        }, 4000);
+
+        function autoSlideChange() {
+            clearInterval(autoSlide);
+            setTimeout(() => {
+                autoSlide;
+            }, 1);
+        }
 
         leftArrow.onclick = function () {
             if (!(slidePosition === 1)) {
                 slidePosition -= 1;
                 right -= 1190;
                 slider.style.right = `${right}px`;
+                autoSlideChange();
             }
             if (slidePosition === 1) {
                 navLinesActive(line1, line2, line3);
@@ -135,6 +162,7 @@ function slidebar() {
                 slidePosition += 1;
                 right += 1190;
                 slider.style.right = `${right}px`;
+                autoSlideChange();
             }
             if (slidePosition === 2) {
                 navLinesActive(line2, line1, line3);
@@ -155,6 +183,7 @@ function slidebar() {
             right = px;
             navLinesActive(first, second, third);
             slidePosition = slidePositionNum;
+            autoSlideChange();
         }
         line1.onclick = function () {
             navLinesClick(0, line1, line2, line3, 1);
@@ -166,6 +195,6 @@ function slidebar() {
             navLinesClick(2380, line3, line1, line2, 3);
         }
     }
-    slideArrows()
+    slide();
 }
 slidebar();
