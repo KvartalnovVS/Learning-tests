@@ -14,6 +14,20 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-family: "Readex Pro";
+  font-size: 42px;
+  line-height: 52.5px;
+  margin: 0 auto;
+}
+
+.text {
+  margin: 9px auto 0 auto;
+  font-family: "Readex Pro";
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,4 +315,136 @@ body {
 }
 .slidebarArrow:hover {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shop__header {
+  margin-top: 75px;
+}
+.shop__title {
+  width: 780px;
+}
+.shop__text {
+  width: 628px;
+}
+.shop__main {
+  margin-top: 55px;
+  margin-bottom: 100px;
+}
+.shop__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.shop__column1 {
+  width: 639px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 16px;
+}
+.shop__laptop {
+  position: relative;
+  bottom: 0px;
+  width: 555px;
+  height: 472px;
+  margin-bottom: 50px;
+  padding: 0 42px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.shop__watch {
+  position: relative;
+  top: 0px;
+  width: 555px;
+  height: 270px;
+  padding: 0 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.shop__column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 640px;
+}
+.shop__phone {
+  position: relative;
+  top: 0px;
+  width: 312px;
+  padding-top: 144px;
+  height: 648px;
+  margin-right: 16px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.shop__tablet {
+  position: relative;
+  bottom: 0px;
+  width: 312px;
+  height: 678px;
+  padding-top: 114px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.shopItem {
+  -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.25));
+  border-radius: 32px;
+}
+
+.laptop__info {
+  text-align: right;
+  width: 192px;
+  margin-left: auto;
+}
+.shopName {
+  font-size: 15px;
+  line-height: 19.2px;
+  font-family: "Readex Pro";
+}
+
+.shopTitle {
+  font-size: 32px;
+  line-height: 38.4px;
+  font-family: "Readex Pro";
+}
+
+.watch__info {
+  text-align: right;
+  margin: 87px 0;
+  width: 200px;
+}
+.phone__img {
+  margin-left: 16px;
+}
+.phone__info {
+  margin: 41px auto 0 auto;
+  text-align: center;
+}
+.phone__title {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.tablet__info {
+  text-align: center;
+}
+.tablet__title {
+  width: 233px;
+  margin: 0 auto;
+}
+.tablet__img {
+  margin-top: 44px;
 }
