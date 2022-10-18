@@ -100,7 +100,7 @@ function navMenu() {
         list.classList.remove('showList');
     }
 }
-navMenu()
+navMenu();
 
 function slidebar() {
     let leftArrow = document.getElementById('slidebarLeftArrow');
@@ -198,3 +198,37 @@ function slidebar() {
     slide();
 }
 slidebar();
+
+function shop() {
+    let laptop = document.getElementById('laptop');
+    let watch = document.getElementById('watch');
+    let phone = document.getElementById('phone');
+    let tablet = document.getElementById('tablet');
+
+    laptop.onmouseover = function () {
+        laptop.style.bottom = '40px';
+    }
+    watch.onmouseover = function () {
+        watch.style.top = '40px';
+    }
+    phone.onmouseover = function () {
+        phone.style.top = '40px';
+    }
+    tablet.onmouseover = function () {
+        tablet.style.bottom = '40px';
+    }
+
+    laptop.onmouseout = function () {
+        laptop.style.bottom = '0px';
+    }
+    watch.onmouseout = function () {
+        watch.style.top = '0px';
+    }
+    phone.onmouseout = function () {
+        phone.style.top = '0px';
+    }
+    tablet.onmouseout = function () {
+        tablet.style.bottom = '0px';
+    }
+}
+shop();
