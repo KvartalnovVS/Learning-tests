@@ -212,10 +212,10 @@ function shop() {
         watch.style.top = '40px';
     }
     phone.onmouseover = function () {
-        phone.style.top = '40px';
+        phone.style.bottom = '40px';
     }
     tablet.onmouseover = function () {
-        tablet.style.bottom = '40px';
+        tablet.style.top = '40px';
     }
 
     laptop.onmouseout = function () {
@@ -225,10 +225,10 @@ function shop() {
         watch.style.top = '0px';
     }
     phone.onmouseout = function () {
-        phone.style.top = '0px';
+        phone.style.bottom = '0px';
     }
     tablet.onmouseout = function () {
-        tablet.style.bottom = '0px';
+        tablet.style.top = '0px';
     }
 }
 shop();
