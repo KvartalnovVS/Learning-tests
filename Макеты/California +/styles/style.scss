@@ -19,12 +19,14 @@ body {
     font-size: 42px;
     line-height: 52.5px;
     margin: 0 auto;
+    text-align: center;
 }
 .text {
     margin: 9px auto 0 auto;
     font-family: "Readex Pro";
     font-size: 14px;
     line-height: 16.8px;
+    text-align: center;
 }
 
 //!      HEADER
@@ -346,7 +348,6 @@ body {
 
     &__main {
         margin-top: 55px;
-        margin-bottom: 100px;
     }
 
     &__items {
@@ -389,7 +390,7 @@ body {
 
     &__phone {
         position: relative;
-        top: 0px;
+        bottom: 0px;
         width: 312px;
         padding-top: 144px;
         height: 648px;
@@ -400,7 +401,7 @@ body {
 
     &__tablet {
         position: relative;
-        bottom: 0px;
+        top: 0px;
         width: 312px;
         height: 678px;
         padding-top: 114px;
@@ -488,5 +489,82 @@ body {
 
     &__img {
         margin-top: 44px;
+    }
+}
+
+//!       SAVE
+.save {
+    &__body {
+    }
+
+    &__header {
+        margin-top: 100px;
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__main {
+    }
+
+    &__items {
+        display: flex;
+        margin-top: 59px;
+        //margin-left: 50px;
+    }
+}
+
+.item {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.2s ease 0s;
+
+    &:hover {
+        filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.4));
+    }
+
+    &__macPro {
+    }
+
+    &__img {
+    }
+
+    &__info {
+    }
+
+    &__title {
+        font-family: "Readex Pro";
+        font-size: 22px;
+        line-height: 27.5px;
+        margin-top: 37px;
+    }
+
+    &__text {
+        width: 261px;
+        height: 51px;
+        margin-top: 9px;
+        font-size: 14px;
+        line-height: 16.8px;
+        color: #4b4b4b;
+    }
+
+    &__price {
+        font-size: 18px;
+        line-height: 21.6px;
+        margin-top: 8px;
+    }
+
+    &__smartWatch {
+    }
+
+    &__macAir {
+    }
+
+    &__ipad {
     }
 }

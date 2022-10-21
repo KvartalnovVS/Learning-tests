@@ -19,6 +19,7 @@ body {
   font-size: 42px;
   line-height: 52.5px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .text {
@@ -26,6 +27,7 @@ body {
   font-family: "Readex Pro";
   font-size: 14px;
   line-height: 16.8px;
+  text-align: center;
 }
 
 .header__top {
@@ -328,7 +330,6 @@ body {
 }
 .shop__main {
   margin-top: 55px;
-  margin-bottom: 100px;
 }
 .shop__items {
   display: -webkit-box;
@@ -378,7 +379,7 @@ body {
 }
 .shop__phone {
   position: relative;
-  top: 0px;
+  bottom: 0px;
   width: 312px;
   padding-top: 144px;
   height: 648px;
@@ -389,7 +390,7 @@ body {
 }
 .shop__tablet {
   position: relative;
-  bottom: 0px;
+  top: 0px;
   width: 312px;
   height: 678px;
   padding-top: 114px;
@@ -447,4 +448,55 @@ body {
 }
 .tablet__img {
   margin-top: 44px;
+}
+
+.save__header {
+  margin-top: 100px;
+}
+.save__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 59px;
+}
+
+.item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+.item:hover {
+  -webkit-filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.4));
+          filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.4));
+}
+.item__title {
+  font-family: "Readex Pro";
+  font-size: 22px;
+  line-height: 27.5px;
+  margin-top: 37px;
+}
+.item__text {
+  width: 261px;
+  height: 51px;
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 16.8px;
+  color: #4b4b4b;
+}
+.item__price {
+  font-size: 18px;
+  line-height: 21.6px;
+  margin-top: 8px;
 }
