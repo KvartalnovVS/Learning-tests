@@ -453,11 +453,13 @@ body {
 .save__header {
   margin-top: 100px;
 }
+.save__main {
+  margin-top: 59px;
+}
 .save__items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 59px;
 }
 
 .item {
@@ -499,4 +501,82 @@ body {
   font-size: 18px;
   line-height: 21.6px;
   margin-top: 8px;
+}
+.see__header {
+  margin-top: 74px;
+}
+.see__main {
+  margin-top: 56px;
+}
+.see__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.seeItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 413px;
+  width: 453px;
+  border-radius: 16px;
+  background-color: #f8f9fa;
+}
+.seeItem:not(:last-child) {
+  margin-right: 27px;
+}
+.seeItem__text {
+  margin-top: 41px;
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "Readex Pro";
+}
+.seeItem__title {
+  font-family: "Readex Pro";
+  font-size: 28px;
+  line-height: 35px;
+}
+.seeItem__button {
+  border: 1px solid black;
+  border-radius: 200px;
+  font-size: 18px;
+  line-height: 21.6px;
+  text-align: center;
+  width: 190px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.seeItem__button:hover {
+  color: #f8f9fa;
+  background-color: #000;
+}
+.seeItem__img {
+  margin-top: 44px;
 }
