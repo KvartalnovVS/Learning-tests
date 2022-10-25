@@ -604,7 +604,6 @@ body {
         margin-right: 27px;
     }
     &:hover {
-        //background-color: red;
     }
     &__latest {
     }
@@ -651,5 +650,184 @@ body {
     }
 
     &__every {
+    }
+}
+
+//!      IDEAS
+.ideas {
+    &__body {
+    }
+
+    &__header {
+        margin-top: 75px;
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__main {
+        margin-top: 56px;
+        display: flex;
+    }
+
+    &__img {
+    }
+
+    &__mainText {
+        margin-left: 35px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    &__para {
+        padding: 14px 0;
+    }
+
+    &__footer {
+        margin-top: 73px;
+    }
+
+    &__link {
+        display: flex;
+        width: 109px;
+        margin: 0 auto;
+    }
+
+    &__linkText {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &__linkImg {
+    }
+}
+
+//!      LOOKING
+.looking {
+    &__body {
+    }
+
+    &__header {
+        margin-top: 75px;
+    }
+
+    &__title {
+    }
+
+    &__search {
+        margin-top: 24px;
+    }
+
+    &__tags {
+        margin-top: 18px;
+    }
+
+    &__row1 {
+        display: flex;
+        justify-content: center;
+        & .looking__tag:not(:last-child) {
+            margin-right: 7px;
+        }
+    }
+
+    &__tag {
+        padding: 12px 22px 13px 22px;
+        border: 1px solid #c5c5c5;
+        border-radius: 200px;
+        font-size: 14px;
+        line-height: 17px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            color: #ffffff;
+            background-color: #000;
+        }
+    }
+
+    &__row2 {
+        display: flex;
+        justify-content: center;
+        margin-top: 7px;
+        & .looking__tag:not(:last-child) {
+            margin-right: 7px;
+        }
+    }
+
+    &__main {
+        margin-top: 68px;
+    }
+
+    &__never {
+    }
+}
+.search {
+    background-color: #f8f9fa;
+    border: 1px solid #c5c5c5;
+    border-radius: 100px;
+    display: flex;
+    width: 650px;
+    height: 60px;
+    margin: 24px auto 0 auto;
+    &__img {
+        margin: 15px 20px 16px 17px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 17px;
+        margin: 21px 0 22px 0;
+    }
+}
+.never {
+    &__body {
+        width: 935px;
+        //height: 450px;
+        margin: 0 auto;
+        padding: 47px 0 43px 0;
+        background: #dce5e2;
+        border-radius: 16px;
+    }
+
+    &__header {
+    }
+
+    &__title {
+    }
+
+    &__text {
+    }
+
+    &__img {
+        margin: 14px auto 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__singUp {
+        margin: 14px auto 0px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__email {
+        padding: 16px 184px 17px 32px;
+        border: 1px solid #000000;
+        border-radius: 54px 0px 0px 54px;
+        background: #dce5e2;
+    }
+
+    &__btn {
+        padding: 16px 33px 17px 32px;
+        color: #ffffff;
+        background: #000000;
+        border-radius: 0px 200px 200px 0px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
     }
 }
