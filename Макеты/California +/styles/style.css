@@ -25,7 +25,7 @@ body {
 .text {
   margin: 9px auto 0 auto;
   font-family: "Readex Pro";
-  font-size: 14px;
+  font-size: 13px;
   line-height: 16.8px;
   text-align: center;
 }
@@ -687,6 +687,13 @@ body {
   background: #dce5e2;
   border-radius: 16px;
 }
+.never__text {
+  margin: 9px auto 0 auto;
+  font-family: "Inter";
+  font-size: 16px;
+  line-height: 19.2px;
+  text-align: center;
+}
 .never__img {
   margin: 14px auto 0 auto;
   display: -webkit-box;
@@ -722,4 +729,121 @@ body {
 }
 .never__btn:hover {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dce5e2;
+  margin: 19px -8px 0 -8px;
+}
+.footer__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 44px;
+  height: 300px;
+  border-bottom: 1px solid #dce5e2;
+}
+.footer__label {
+  width: 394px;
+  height: 191px;
+}
+.footer__california {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 170px;
+  margin-top: 11px;
+}
+.footer__text {
+  font-size: 16px;
+  line-height: 19px;
+  width: 304px;
+  margin-top: 18px;
+}
+.footer__bottom {
+  margin-top: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__madeby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__madeText {
+  font-family: "Readex Pro";
+  font-size: 18px;
+  line-height: 22px;
+  width: 85px;
+}
+.footer__madeNick {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: -1px;
+  width: 72px;
+}
+.footer__arrow {
+  margin-top: 2px;
+}
+.footer__poweredby {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__poweredText {
+  font-family: "Readex Pro";
+  font-size: 18px;
+  line-height: 22px;
+  width: 113px;
+}
+.footer__poweredNick {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: -1px;
+  width: 78px;
+}
+.footer__l {
+  padding-left: 1px;
+}
+.footer__i {
+  padding-left: 2px;
+}
+.footer__f {
+  padding-left: 2px;
+}
+.footer__o {
+  padding-left: 1px;
+}
+.footer__r {
+  padding-left: 1px;
+}
+.footer__i2 {
+  padding-left: 3px;
+}
+.footer__a2 {
+  padding-left: 1px;
+}
+
+.column {
+  width: 197px;
+  height: 191px;
+  margin-left: 28px;
+}
+.column__title {
+  font-family: "Readex Pro";
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 19px;
+}
+.column__row {
+  font-size: 17px;
+  line-height: 22px;
+}
+.column__row:not(:last-child) {
+  margin-bottom: 14px;
 }

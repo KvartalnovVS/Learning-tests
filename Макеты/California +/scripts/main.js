@@ -134,7 +134,7 @@ function slidebar() {
             if (slidePosition === 3) {
                 navLinesActive(line3, line1, line2);
             }
-        }, 4000);
+        }, 1000);
 
         function autoSlideChange() {
             clearInterval(autoSlide);
