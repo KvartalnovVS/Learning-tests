@@ -134,13 +134,10 @@ function slidebar() {
             if (slidePosition === 3) {
                 navLinesActive(line3, line1, line2);
             }
-        }, 1000);
+        }, 4000);
 
         function autoSlideChange() {
             clearInterval(autoSlide);
-            setTimeout(() => {
-                autoSlide;
-            }, 1);
         }
 
         leftArrow.onclick = function () {
