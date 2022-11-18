@@ -1,3 +1,11 @@
+//! Конструктор каждой модели в частности
+function Model(brand, name, price, color, maxSpeed) {
+    this.brand = brand;
+    this.name = name;
+    this.price = price;
+    this.color = color;
+    this.maxSpeed = maxSpeed;
+}
 //! Список моделей и их характеристики
 let superb = new Model('Skoda', 'Superb', 4500000, ['white', 'black', 'cherry'], 280);
 let octavia = new Model('Skoda', 'Octavia', 1800000, ['white', 'black', 'gray'], 150);
@@ -13,6 +21,12 @@ let skodaModels = [superb, octavia, yeti, rapid];
 let volkswagenModels = [tuareg, polo, tiguan];
 
 
+//! Конструктор брэнда машины и модельного ряда
+function Car(brand, models) {
+    this.carBrand = brand;
+    this.carModels = models;
+}
+
 let carSkoda = new Car('Skoda', skodaModels);
 let carVolkswagen = new Car('Volkswagen', volkswagenModels);
 
@@ -24,11 +38,6 @@ let carPriceList = document.getElementById('price-select');
 
 let btnResult = document.querySelector('.btn-result');
 
-//! Конструктор брэнда машины и модельного ряда
-function Car(brand, models) {
-    this.carBrand = brand;
-    this.carModels = models;
-}
 //? Выбор брэнда
 let brandslist = function () {
     for (let i = 0; i < cars.length; i++) {
@@ -53,14 +62,6 @@ function priceList() {
 }
 priceList();
 
-//! Конструктор каждой модели в частности
-function Model(brand, name, price, color, maxSpeed) {
-    this.brand = brand;
-    this.name = name;
-    this.price = price;
-    this.color = color;
-    this.maxSpeed = maxSpeed;
-}
 //? Выбор модели
 Car.prototype.modelsList = function startModelsList() {
     while (carModelList.firstChild) {
