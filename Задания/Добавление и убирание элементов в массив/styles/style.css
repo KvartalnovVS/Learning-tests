@@ -1,0 +1,8 @@
+.display {
+    border: 2px solid blue;
+    background-color: bisque;
+    width: 400px;
+    height: 600px;
+    margin: 20px auto 0 auto;
+    padding: 5px;
+}
